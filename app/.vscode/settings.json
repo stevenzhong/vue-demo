@@ -1,0 +1,33 @@
+{
+  "editor.tabSize": 2,
+
+  "prettier.printWidth": 160,
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+
+  "[vue]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[stylus]": {
+    "editor.formatOnSave": true
+  },
+
+  "stylusSupremacy.insertBraces": false,
+  "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertSemicolons": false,
+
+  "languageStylus.useSeparator": false,
+
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "printWidth": 160,
+      "tabWidth": 2,
+      "semi": false,
+      "singleQuote": true,
+    }
+  }
+}

@@ -1,0 +1,12 @@
+version: "2"
+services:
+  $SERVICE_NAME:
+    container_name: ${COMPOSE_PROJECT_NAME}_$SERVICE_NAME
+    image: nginx:1.13.3
+    volumes:
+      - ../html:/var/www/html
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - /data/volumes/${COMPOSE_PROJECT_NAME}/$SERVICE_NAME/runtime:/var/log/nginx
+    ports:
+      - ${PORT}:80
+    restart: always
